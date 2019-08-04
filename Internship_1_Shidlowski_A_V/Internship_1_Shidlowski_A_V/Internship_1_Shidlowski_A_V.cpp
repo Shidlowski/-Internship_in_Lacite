@@ -1,4 +1,4 @@
-// Internship_1_Shidlowski_A_V.cpp: определяет точку входа для консольного приложения.
+// Internship_1_Shidlowski_A_V.cpp
 //
 
 #include "stdafx.h"
@@ -8,13 +8,11 @@
 
 using namespace std;
 
-//структура тест
 struct Test{
 	int number;
 	string line;
 }; 
 
-//функция записи в структуру
 void DataWrite(Test *t){
 	cout<<"Please enter a number: ";
 	cin>>t->number;
@@ -39,7 +37,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			{
 				int oldSize=size-1;
 				Test * tempT=new Test[oldSize];
-				//копируем что уже написюкали
+				
 				for(int i=0;i<oldSize;i++){
 					(tempT+i)->number=(t+i)->number;
 					(tempT+i)->line=(t+i)->line;
@@ -47,7 +45,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				delete [] t;
 
 				t=new Test[size];
-				//копируем уже в новый массив на 1 больше
+		
 				for(int i=0;i<oldSize;i++){
 					(t+i)->number=(tempT+i)->number;
 					(t+i)->line=(tempT+i)->line;

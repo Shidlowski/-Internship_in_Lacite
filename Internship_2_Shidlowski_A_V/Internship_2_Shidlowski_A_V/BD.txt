@@ -1,0 +1,13 @@
+
+Surname: Shidlowski
+Experience: 2
+Salary: 340.25
+AcademicHours: 4
+ZP: 1361
+Premium: 68.05
+Surname: Birukova
+Experience: 5
+Salary: 500.5
+AcademicHours: 100
+ZP: 50050
+Premium: 4004
